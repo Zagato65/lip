@@ -1,0 +1,40 @@
+package lista_01;
+
+// Importação da blibioteca necessária para criar o Scanner.
+import java.util.Scanner;
+
+// Faça um programa que determine o maior de três números.
+public class Exercicio_06 {
+
+	public static void main(String[] args) {
+		// Criação de objeto Scanner (leitor).
+		Scanner leitor = new Scanner(System.in);
+		
+		// Declaração do tipo das variáveis. 
+		double n1, n2, n3;
+		
+		// Bloco de atribuição de valores as variáveis.
+		System.out.print("Digite um número: ");
+		n1 = leitor.nextDouble();
+		System.out.print("Digite um segundo número: ");
+		n2 = leitor.nextDouble();
+		System.out.print("Digite um terceiro número: ");
+		n3 = leitor.nextDouble();
+		
+		// Bloco de teste de condições para verificar o maior número.
+		if (n1 >= n2 && n1 >= n3) {
+			System.out.println("O maior número entre os três é o " + n1);
+		}
+		else if (n2 >= n1 && n2 >= n3) {
+			System.out.println("O maior número entre os três é o " + n2);
+		}
+		else {
+			System.out.println("O maior número entre os é o " + n3);
+		}
+		
+		// Declaração do fim do Scanner.
+		leitor.close();
+
+	}
+
+}
